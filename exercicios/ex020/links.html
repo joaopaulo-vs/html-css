@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        /* SELETORES PERSONALIZADOS
+        #  =  id
+        .  =  class
+        :  =  pseudo-class
+        :: =  pseudo-element
+        >  =  children
+        */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial::before {
+            content: '⇨ ';
+        }
+        .especial::after {
+            content: '⇦ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://instagram.com/str.virtuall" target="_blank" class="especial">Perfil de Art IA no Instagram</a></li>
+        <li><a href="https://instagram.com/jp.vieira.sil" target="_blank">Perfil Pessoal</a></li>
+        <li><a href="https://x.com/_pdead" target="_blank">Perfil Twitter</a></li>
+    </ul>
+    
+</body>
+</html>
